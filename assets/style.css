@@ -131,14 +131,16 @@ body {
 
 .intro__text {
   font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
   font-size: 18px;
   background: #fff;
   padding: 45px 80px;
   border: 15px solid #ddcda5;
   position: relative;
-  width: 80%;
+  width: 75%;
   margin: 0 auto;
   bottom: -150px;
+  line-height: 30px;
 }
 
 .intro__text span {
@@ -188,6 +190,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 48%;
 }
 
 .demo__name {
@@ -196,8 +199,62 @@ body {
   margin-bottom: 40px;
 }
 
+.demo__name--mb {
+  margin-bottom: 30px;
+}
+
 .demo__desc {
   font-size: 16px;
   line-height: 1.7;
+}
+
+.demo__desc--mb {
+  margin-bottom: 30px;
+}
+
+.demo__img {
+  width: 48%;
+}
+
+.demo__box {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  background: #fff;
+  padding: 45px 80px;
+  border: 15px solid #ddcda5;
+  width: 75%;
+  margin: 0 auto;
+  line-height: 30px;
+  margin-bottom: 100px;
+}
+
+.demo__items {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin-top: 70px;
+  gap: 33px 30px;
+}
+
+.demo__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px;
+  background: #f0f0f0;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.demo__item-img {
+  margin-right: 35px;
+}
+
+.demo__item-text {
+  font-size: 18px;
+  line-height: 1.5;
 }
 /*# sourceMappingURL=style.css.map */

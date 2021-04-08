@@ -116,14 +116,16 @@ body {
     }
     &__text {
         font-family: 'Ubuntu', sans-serif;
+        font-weight: 400;
         font-size: 18px;
         background: #fff;
         padding: 45px 80px;
         border: 15px solid #ddcda5;
         position: relative;
-        width: 80%;
+        width: 75%;
         margin: 0 auto;
         bottom: -150px;
+        line-height: 30px;
         span {
             font-size: 58px;
         }
@@ -159,14 +161,55 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: 48%;
     }
     &__name {
         font-size: 30px;
         font-weight: 700;
         margin-bottom: 40px;
+        &--mb {
+            margin-bottom: 30px;
+        }
     }
     &__desc {
         font-size: 16px;
         line-height: 1.7;
+        &--mb {
+            margin-bottom: 30px;
+        }
+    }
+    &__img {
+        width: 48%;
+    }
+    &__box {
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        background: #fff;
+        padding: 45px 80px;
+        border: 15px solid #ddcda5;
+        width: 75%;
+        margin: 0 auto;
+        line-height: 30px;
+        margin-bottom: 100px;
+    }
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 70px;
+        gap: 33px 30px;
+    }
+    &__item {
+        display: flex;
+        padding: 40px;
+        background: #f0f0f0;
+        align-items: flex-start;
+    }
+    &__item-img {
+        margin-right: 35px;
+    }
+    &__item-text {
+        font-size: 18px;
+        line-height: 1.5;
     }
 }
