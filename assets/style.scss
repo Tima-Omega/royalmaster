@@ -57,7 +57,7 @@ body {
 .nav {
     display: flex;
     align-items: center;
-    margin-right: 188px;
+    margin: 0 11% 0 0;
     &__link {
         font-size: 14px;
         line-height: 2;
@@ -82,6 +82,9 @@ body {
             &::after {
             opacity: 1;
             }
+        }
+        &--tel {
+            margin: 0;
         }
     }
 }
@@ -251,7 +254,7 @@ body {
         display: flex;
     }
     &__col {
-        margin-bottom: 50px;
+        margin-bottom: 25px;
         &:last-child {
             margin-bottom: 0;
         }
@@ -278,5 +281,93 @@ body {
         font-size: 24px;
         padding: 5px 0 25px;
         text-transform: uppercase;
+    }
+}
+
+.wedo {
+    padding: 110px 0 105px;
+    background: url(../assets/img/wedo-bg.png);
+    &__title {
+        color: #fff;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 1.2;
+        margin-bottom: 65px;
+    }
+    &__cont {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px 60px;
+    }
+    &__item {
+        background: transparent;
+        padding: 60px;
+        border: 1px solid #fff;
+    }
+    &__text {
+        color: #fff;
+        font-size: 24px;
+        line-height: 1.3;
+        margin-bottom: 35px;
+    }
+    &__btn {
+        max-width: 150px;
+        width: 100%;
+    }
+}
+
+.portfolio {
+    padding: 100px 0;
+    &__title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 1.2;
+        color: #000;
+        margin-bottom: 100px;
+    }
+    &__cont {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px 30px;
+    }
+    &__item {
+        position: relative;
+        &--1 {
+            grid-area: 1 / 1 / 3 / 3;
+        }
+        &--2 {
+            grid-area: 3 / 1 / 5 / 5;
+        }
+        &:hover .portfolio__text {
+            opacity: 1;
+        }
+    }
+    &__text {
+        position: absolute;
+        bottom: 0;
+        background: rgba(#000, .7);
+        font-weight: 700;
+        font-size: 32px;
+        color: #fff;
+        height: 15%;
+        width: 100%;
+        padding: 0 0 0 45px;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        opacity: 0;
+        transition: .2s linear;
+        &--small {
+            font-size: 24px;
+            padding-left: 25px;
+            padding-right: 25px;
+            min-height: 25%;
+        }
+    }
+    &__img {
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }

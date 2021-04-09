@@ -63,7 +63,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 188px;
+  margin: 0 11% 0 0;
 }
 
 .nav__link {
@@ -92,6 +92,10 @@ body {
 
 .nav__link:hover::after {
   opacity: 1;
+}
+
+.nav__link--tel {
+  margin: 0;
 }
 
 .intro {
@@ -309,7 +313,7 @@ body {
 }
 
 .works__col {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 .works__col:last-child {
@@ -344,5 +348,125 @@ body {
   font-size: 24px;
   padding: 5px 0 25px;
   text-transform: uppercase;
+}
+
+.wedo {
+  padding: 110px 0 105px;
+  background: url(../assets/img/wedo-bg.png);
+}
+
+.wedo__title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 65px;
+}
+
+.wedo__cont {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 60px 60px;
+}
+
+.wedo__item {
+  background: transparent;
+  padding: 60px;
+  border: 1px solid #fff;
+}
+
+.wedo__text {
+  color: #fff;
+  font-size: 24px;
+  line-height: 1.3;
+  margin-bottom: 35px;
+}
+
+.wedo__btn {
+  max-width: 150px;
+  width: 100%;
+}
+
+.portfolio {
+  padding: 100px 0;
+}
+
+.portfolio__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.2;
+  color: #000;
+  margin-bottom: 100px;
+}
+
+.portfolio__cont {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 30px 30px;
+}
+
+.portfolio__item {
+  position: relative;
+}
+
+.portfolio__item--1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 1 / 3 / 3;
+}
+
+.portfolio__item--2 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: 3 / 1 / 5 / 5;
+}
+
+.portfolio__item:hover .portfolio__text {
+  opacity: 1;
+}
+
+.portfolio__text {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  font-weight: 700;
+  font-size: 32px;
+  color: #fff;
+  height: 15%;
+  width: 100%;
+  padding: 0 0 0 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  opacity: 0;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.portfolio__text--small {
+  font-size: 24px;
+  padding-left: 25px;
+  padding-right: 25px;
+  min-height: 25%;
+}
+
+.portfolio__img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=style.css.map */
