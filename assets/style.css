@@ -690,7 +690,7 @@ body {
 }
 
 .btn--white:hover {
-  background: #f0f0f0;
+  color: #dabb6e;
 }
 
 .btn--brown {
@@ -701,7 +701,7 @@ body {
 }
 
 .btn--brown:hover {
-  opacity: .5;
+  background: #dabb6e;
 }
 
 .works {
@@ -1076,6 +1076,7 @@ body {
 @media (max-width: 576px) {
   .portfolio__item {
     margin-bottom: 20px;
+    height: 250px;
   }
 }
 
@@ -1106,12 +1107,6 @@ body {
     opacity: 1;
     font-size: 28px;
     padding-left: 20px;
-  }
-}
-
-@media (max-width: 576px) {
-  .portfolio__text {
-    bottom: 8px;
   }
 }
 
