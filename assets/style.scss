@@ -25,6 +25,14 @@
     font-weight: 900;
     font-style: normal;
 }
+@mixin mask-contain-center {
+    mask-repeat: no-repeat !important;
+    -webkit-mask-repeat: no-repeat !important;
+    mask-position: center center !important;
+    -webkit-mask-position: center center !important;
+    mask-size: contain !important;
+    -webkit-mask-size: contain !important;
+  }
 
 body {
     font-family: 'Gilroy';
@@ -54,10 +62,55 @@ body {
     }
 }
 
+.burger {
+    position: relative;
+    margin-right: auto;
+    display: none;
+    @media (max-width:960px) {
+        display: block;
+    }
+    &__btn{
+        width: 25px;
+        height: 25px;
+        background: #fff;
+        mask: url(../assets/img/menu.svg);
+        cursor: pointer;
+        outline: none;
+        border: none;
+        @include mask-contain-center;
+    }
+    &__list {
+        background: rgba(#000, .7);
+        position: absolute;
+        top: calc(100% + 10px);
+        left: 0;
+        display: none;
+        width: calc(320px - 20px);
+        padding: 20px;
+        border-radius: 5px;
+        @media (max-width:576px) {
+            left: -20px;
+            width: calc(100vw);
+        }
+    }
+    &__link {
+        display: block;
+        font-size: 14px;
+        line-height: 2;
+        margin-right: 40px;
+        color: #d2ae6d;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
+
 .nav {
     display: flex;
     align-items: center;
     margin: 0 11% 0 0;
+    @media (max-width: 992px) {
+        display: none;
+    }
     &__link {
         font-size: 14px;
         line-height: 2;
@@ -218,6 +271,7 @@ body {
 }
 
 .btn {
+    font-family: 'Gilroy';
     border-radius: 50px;
     min-width: 150px;
     width: 100%;
@@ -358,9 +412,9 @@ body {
         font-weight: 700;
         font-size: 32px;
         color: #fff;
-        height: 15%;
+        min-height: 25%;
         width: 100%;
-        padding: 0 0 0 45px;
+        padding: 8px 0 8px 45px;
         display: flex;
         align-items: center;
         text-transform: uppercase;
@@ -370,7 +424,6 @@ body {
             font-size: 24px;
             padding-left: 25px;
             padding-right: 25px;
-            min-height: 25%;
         }
     }
     &__img {
