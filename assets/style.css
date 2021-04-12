@@ -980,6 +980,10 @@ body {
   width: 100%;
 }
 
+.wedo__btn:hover {
+  background: #AF9D6F;
+}
+
 .portfolio {
   padding: 100px 0;
 }
@@ -1594,6 +1598,7 @@ body {
   color: #d2ae6d;
   text-decoration: none;
   text-transform: uppercase;
+  position: relative;
 }
 
 .footer__nav-link:last-child {

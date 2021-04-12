@@ -649,6 +649,9 @@ body {
     &__btn {
         max-width: 150px;
         width: 100%;
+        &:hover {
+            background: #AF9D6F;
+        }
     }
 }
 
@@ -1040,6 +1043,7 @@ body {
         color: #d2ae6d;
         text-decoration: none;
         text-transform: uppercase;
+        position: relative;
         &:last-child {
             margin-right: 0;
         }
