@@ -545,6 +545,9 @@ body {
     }
     &__cont {
         display: flex;
+        @media (max-width: 576px) {
+            flex-direction: column;
+        }
     }
     &__item {
         padding: 20px;
@@ -555,6 +558,7 @@ body {
         }
         @media (max-width: 576px) {
             padding: 8px;
+            width: 100%;
         }
         &--brown {
             background: #ddcda5;
@@ -563,6 +567,17 @@ body {
     &__img {
         max-width: 100%;
         width: 100%;
+        height: 450px;
+        object-fit: cover;
+        @media (max-width: 992px) {
+            height: 370px;
+        }
+        @media (max-width: 768px) {
+            height: 300px;
+        }
+        @media (max-width: 576px) {
+            height: 250px;
+        }
     }
     &__item-name {
         color: #fff;
