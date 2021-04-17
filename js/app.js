@@ -8,7 +8,7 @@ $('.overlay').click(function () {
     $(this).fadeOut();
     $('.modal').fadeOut();
 })
-$('.modal__btn').click(function() {
+$('.wedo__btn').click(function() {
     $('.overlay').fadeIn();
     $('.modal').fadeIn();
 });

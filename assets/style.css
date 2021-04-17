@@ -1731,16 +1731,20 @@ body {
 }
 
 .modal {
+  display: none;
   padding: 50px 60px;
   z-index: 50;
   position: relative;
   background: #fff;
   max-width: 973px;
   width: calc(100vw - 50px);
-  margin: 0 auto;
   height: calc(100vh - 100px);
   overflow-x: hidden;
   overflow-y: scroll;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 @media (max-width: 768px) {
