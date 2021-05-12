@@ -14,44 +14,38 @@
     <a class="order__mail">Пакет второй</a>
     <a class="done">Успешно</a>
 
-    <div class="modal modal--order modal--order-first">
+    <div class="modal modal--sm modal-order">
         <button class="modal__close"></button>
-        <div class="modal__name modal__name--order">Пакет «С авторским надзором» </div>
-        <div class="modal__item modal__item--order">
-            <div class="contact__phone modal__phone">
-                <input type="tel" class="contact__input">
-                <div class="contact__input-pref">+7</div>
+        <div class="modal__name modal__name--sm">Пакет «С авторским надзором»</div>
+        <form action="" class="modal__form">
+            <div class="modal__box">
+                <input type="tel" placeholder="+7" class="modal__input modal__input--tel">
             </div>
-            <button class="btn btn--brown contact__btn modal__btn">Заказать пакет</button>
-        </div>
+            <button class="btn btn--brown modal__btn">Заказать пакет</button>
+        </form>
     </div>
 
-    <div class="modal modal--order modal--order-second">
+    <div class="modal modal--sm modal-order-big">
         <button class="modal__close"></button>
-        <div class="modal__name modal__name--order">Пакет «С авторским надзором» </div>
-        <div class="modal__item modal__item--order">
-            <div class="contact__phone modal__phone modal__phone--order">
+        <div class="modal__name modal__name--sm">Пакет «С авторским надзором»</div>
+        <form action="" class="modal__form">
+            <div class="modal__box">
                 <input type="text" placeholder="Имя" class="modal__input">
             </div>
-            <div class="contact__phone modal__phone">
-                <input type="tel" class="contact__input">
-                <div class="contact__input-pref">+7</div>
+            <div class="modal__box">
+                <input type="tel" placeholder="+7" class="modal__input modal__input--tel">
             </div>
-        </div>
-        <div class="modal__item modal__item--order">
-            <div class="contact__phone modal__phone modal__phone--order">
+            <div class="modal__box">
                 <input type="email" placeholder="Email" class="modal__input">
             </div>
-            <button class="btn btn--brown contact__btn modal__btn">Заказать пакет</button>
-        </div>
+            <button class="btn btn--brown modal__btn">Заказать пакет</button>
+        </form>
     </div>
 
-    <div class="modal modal--order modal--order-done">
+    <div class="modal modal--sm modal-done">
         <button class="modal__close"></button>
-        <div class="modal__name modal__name--order modal__name--mb">Успешно</div>
-        <div class="modal__text modal__text--order">
-            Спасибо, аша заявка успешно отправлена!
-        </div>
+        <div class="modal__name modal__name--sm">Успешно</div>
+        <div class="modal__desc">Спасибо, ваша заявка успешно отправлена!</div>
     </div>
 
 
