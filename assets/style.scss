@@ -9,6 +9,15 @@
 }
 @font-face {
     font-family: 'Gilroy';
+    src: url('../assets/fonts/Gilroy-Medium.eot');
+    src: url('../assets/fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/Gilroy-Medium.woff') format('woff'),
+    url('../assets/fonts/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
     src: url('../assets/fonts/Gilroy-Bold.eot');
     src: url('../assets/fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
     url('../assets/fonts/Gilroy-Bold.woff') format('woff'),
@@ -1136,7 +1145,7 @@ body {
     display: none;
     padding: 50px 60px;
     z-index: 50;
-    position: relative;
+    position: fixed;
     background: #fff;
     max-width: 973px;
     width: calc(100vw - 50px);
@@ -1153,6 +1162,17 @@ body {
         height: calc(100vh - 75px);
         padding: 15px;
         width: calc(100vw - 30px);
+        padding: 45px 60px;
+    }
+    &--order {
+        max-width: 720px;
+        height: auto;
+        overflow: hidden;
+        z-index: 50;
+        padding: 45px 60px;
+        @media(max-width:576px) {
+            padding: 25px;
+        }
     }
     &__close {
         width: 25px;
@@ -1187,6 +1207,15 @@ body {
             font-size: 22px;
             margin-right: 40px;
         }
+        &--order {
+            font-weight: 500;
+            @media(max-width:576px) {
+                margin-right: 20px;
+            }
+        }
+        &--mb {
+            margin-bottom: 30px;
+        }
     }
     &__item {
         margin-bottom: 40px;
@@ -1199,6 +1228,15 @@ body {
         }
         &:last-child {
             margin-bottom: 0;
+        }
+        &--order {
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 25px;
+            @media(max-width:768px) {
+                flex-direction: column;
+                align-items: center;
+            }
         }
     }
     &__img {
@@ -1233,5 +1271,40 @@ body {
         @media (max-width: 576px) {
             font-size: 14px;
         }
+        &--order {
+            font-size: 24px;
+            font-weight: 500;
+            @media(max-width:768px) {
+                font-size: 18px;
+            }
+            @media (max-width: 576px) {
+                font-size: 14px;
+            }
+        }
+    }
+    &__btn {
+        margin-top: 0;
+        max-width: 285px;
+        padding: 0;
+        font-weight: 500;
+    }
+    &__phone {
+        @media(max-width:768px) {
+            margin-bottom: 25px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        &--order {
+            padding-left: 25px;
+        }
+    }
+    &__input {
+        outline: none;
+        border: none;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        font-size: 18px;
     }
 }
